@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  /* Colors */
+  --white: hsl(0, 100%, 100%);
+  --black: (0, 0%, 0%);
+
+  --gray-950: hsl(0, 0%, 16%);
+  --gray-700: hsl(210, 10%, 33%);
+  --gray-500: hsl(201, 11%, 66%);
+  --gray-50: hsl(180, 11%, 96%);
+
+  --green-500: hsl(171, 66%, 44%);
+  --green-300: hsl(171, 52%, 58%);
+
+  --blue-500: hsl(233, 100%, 69%);
+  --blue-400: hsl(232, 100%, 77%);
+
+  --gradient-1: linear-gradient(hsl(0, 0%, 31%), hsl(0, 0%, 0%));
+  --gradient-2: linear-gradient(hsl(0, 0%, 43%), hsl(0, 0%, 0%));
+
+  /* typography */
+  --font-family: "Bai Jamjuree", sans-serif;
+
+  --font-size-46: 4.6rem;
+  --font-size-40: 4rem;
+  --font-size-36: 3.6rem;
+  --font-size-32: 3.2rem;
+  --font-size-28: 2.8rem;
+  --font-size-24: 2.4rem;
+  --font-size-20: 2rem;
+  --font-size-16: 1.6rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-25: 1.25;
+  --line-height-50: 1.5;
+
+  --letter-spacing-15: -0.15px;
+  --letter-spacing-40: -0.4px;
+  --letter-spacing-50: -0.5px;
+  --letter-spacing-60: -0.6px;
+  --letter-spacing-75: -0.75px;
+
+  /* spacing */
+  --spacing-0: 0;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1100: 5.5rem;
+  --spacing-1200: 6rem;
+
+  --padding-inline: clamp(2rem, -2.14rem + 20.71vw, 16.5rem);
+}
+.text-preset-1 {
+  font-size: var(--font-size-46);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-25);
+  letter-spacing: var(--letter-spacing-75);
+}
+.text-preset-2 {
+  font-size: var(--font-size-40);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-25);
+  letter-spacing: var(--letter-spacing-75);
+}
+.text-preset-3 {
+  font-size: var(--font-size-36);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-25);
+  letter-spacing: var(--letter-spacing-60);
+}
+.text-preset-4 {
+  font-size: var(--font-size-32);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-25);
+  letter-spacing: var(--letter-spacing-50);
+}
+.text-preset-5 {
+  font-size: var(--font-size-28);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-25);
+  letter-spacing: var(--letter-spacing-50);
+}
+.text-preset-6 {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-50);
+  letter-spacing: var(--letter-spacing-40);
+}
+.text-preset-7 {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-50);
+  letter-spacing: var(--letter-spacing-15);
+}
+.text-preset-8 {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-50);
+  letter-spacing: var(--letter-spacing-15);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+html {
+  font-size: 62.5%;
+}
+.btn {
+  padding: 1.3rem 7.3rem;
+  border-radius: 2.8rem;
+  color: var(--white);
+}
+.btn-primary {
+  background-color: var(--green-500);
+}
+.btn-secondary {
+  background-color: var(--blue-500);
+}
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  gap: var(--spacing-1200);
+  scroll-behavior: smooth;
+}
+.container {
+  padding-inline: var(--padding-inline);
+}
+header .container {
+  gap: 6.4rem;
+}
+.center {
+  text-align: center;
+}
+nav {
+  align-self: center;
+  padding-block-start: 12rem;
+}
+.hero {
+  gap: 5.6rem;
+}
+.hero-content {
+  gap: 1.6rem;
+}
+.hero-cta {
+  gap: 2.4rem;
+  align-items: center;
+}
+main {
+  margin-block-start: 15.8rem;
+}
+.content.flex-col {
+  gap: 7.2rem;
+}
+.content-intro {
+  gap: 1.6rem;
+}
+.content-features {
+  gap: 7.2rem;
+}
+.content-feature-info {
+  gap: 5.6rem;
+}
+.content-feature-info-card {
+  gap: 0.8rem;
+}
+.clipboard {
+  margin-block-start: 17.8rem;
+  gap: 7.2rem;
+}
+.clipboard-info {
+  gap: 1.6rem;
+}
+.workflow {
+  margin-block-start: 13rem;
+  gap: 7.2rem;
+}
+.workflow-into {
+  gap: 1.6rem;
+}
+.workflow-card-container {
+  gap: 6.4rem;
+}
+.workflow-card {
+  gap: 4rem;
+  align-items: center;
+}
+.workflow-card-body {
+  gap: 1.6rem;
+}
+.icon {
+  margin-block-start: 14.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5.6rem;
+}
+.bottom-hero {
+  margin-block-start: 17.2rem;
+}
+footer {
+  margin-block: 16.8rem 5.5rem;
+  gap: 3.2rem;
+  align-items: center;
+}
+.footer-links {
+  display: grid;
+  text-align: center;
+  gap: 2.4rem;
+}
+.footer-links a {
+  color: var(--gray-700);
+}
+.footer-social {
+  gap: 4rem;
+}

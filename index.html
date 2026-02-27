@@ -12,61 +12,65 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Clipboard Landing</title>
   </head>
-  <body>
+  <body class="flex-col">
     <header>
-      <div class="container">
+      <div class="container flex-col">
         <nav>
           <a href="/">
             <img src="./images/logo.svg" alt="Company Logo" />
           </a>
         </nav>
-        <article class="hero">
-          <div class="hero-content">
-            <h1>A history of everything you copy</h1>
-            <p>
+        <article class="hero flex-col">
+          <div class="hero-content center flex-col">
+            <h1 class="text-preset-4">A history of everything you copy</h1>
+            <p class="text-preset-8">
               Clipboard allows you to track and organize everything you copy.
               Instantly access your clipboard on all your devices.
             </p>
           </div>
-          <div class="hero-cta">
-            <a href="#!" class="btn btn-primary">Download for iOS</a>
-            <a href="#!" class="btn btn-secondary">Download for Mac</a>
+          <div class="hero-cta flex-col">
+            <a href="#!" class="btn btn-primary text-preset-7"
+              >Download for iOS</a
+            >
+            <a href="#!" class="btn btn-secondary text-preset-7"
+              >Download for Mac</a
+            >
           </div>
         </article>
       </div>
     </header>
     <main>
       <div class="container">
-        <section class="content">
-          <article class="content-intro">
-            <h2>Keep track of your snippets</h2>
-            <p>
+        <section class="content flex-col">
+          <article class="content-intro center flex-col">
+            <h2 class="text-preset-5">Keep track of your snippets</h2>
+            <p class="text-preset-8">
               Clipboard instantly stores any item you copy in the cloud, meaning
               you can access your snippets immediately on all your devices. Our
               Mac and iOS apps will help you organize everything.
             </p>
           </article>
-          <div class="content-features">
+          <div class="content-features flex-col">
             <div class="content-feature-image">
               <img src="./images/image-computer.png" alt="A computer" />
             </div>
-            <div class="content-feature-info">
-              <article class="content-feature-info-card">
-                <h2>Quick Search</h2>
-                <p>
+            <div class="content-feature-info flex-col center">
+              <article class="content-feature-info-card flex-col">
+                <h2 class="text-preset-6">Quick Search</h2>
+                <p class="text-preset-8">
                   Easily search your snippets by content, category, web address,
                   application, and more.
                 </p>
               </article>
-              <article class="content-feature-info-card">
-                <h2>iCloud Sync</h2>
-                <p>
+              <article class="content-feature-info-card flex-col">
+                <h2 class="text-preset-6">iCloud Sync</h2>
+                <p class="text-preset-8">
                   Instantly saves and syncs snippets across all your devices.
                 </p>
               </article>
-              <article class="content-feature-info-card">
-                <h2>Complete History</h2>
-                <p>
+              <article class="content-feature-info-card flex-col">
+                <h2 class="text-preset-6">Complete History</h2>
+                <p class="text-preset-8">
                   Retrieve any snippets from the first moment you started using
                   the app.
                 </p>
@@ -74,10 +78,10 @@
             </div>
           </div>
         </section>
-        <section class="clipboard">
-          <article class="clipboard-info">
-            <h2>Access Clipboard anywhere</h2>
-            <p>
+        <section class="clipboard flex-col">
+          <article class="clipboard-info center flex-col">
+            <h2 class="text-preset-5">Access Clipboard anywhere</h2>
+            <p class="text-preset-8">
               Whether you’re on the go, or at your computer, you can access all
               your Clipboard snippets in a few simple clicks.
             </p>
@@ -86,43 +90,45 @@
             <img src="./images/image-devices.png" alt="Devices" />
           </article>
         </section>
-        <section class="workflow">
-          <article class="workflow-into">
-            <h2>Supercharge your workflow</h2>
-            <p>We’ve got the tools to boost your productivity.</p>
+        <section class="workflow flex-col">
+          <article class="workflow-into flex-col center">
+            <h2 class="text-preset-5">Supercharge your workflow</h2>
+            <p class="text-preset-8">
+              We’ve got the tools to boost your productivity.
+            </p>
           </article>
-          <article class="workflow-card-container">
-            <div class="workflow-card">
+          <article class="workflow-card-container flex-col">
+            <div class="workflow-card flex-col">
               <div class="workflow-card--header">
                 <img src="./images/icon-blacklist.svg" alt="Blacklist Icon" />
               </div>
-              <div class="workflow-card-body">
-                <h2>Create blacklists</h2>
-                <p>
+              <div class="workflow-card-body center">
+                <h2 class="text-preset-6">Create blacklists</h2>
+                <p class="text-preset-8">
                   Ensure sensitive information never makes its way to your
                   clipboard by excluding certain sources.
                 </p>
               </div>
             </div>
-            <div class="workflow-card">
-              <div class="workflow-card--header">
+            <div class="workflow-card flex-col">
+              <div class="workflow-card-header">
                 <img src="./images/icon-text.svg" alt="Text Icon" />
               </div>
-              <div class="workflow-card-body">
-                <h2>Plain text snippets</h2>
-                <p>
+              <div class="workflow-card-body center">
+                <h2 class="text-preset-6">Plain text snippets</h2>
+                <p class="text-preset-8">
                   Remove unwanted formatting from copied text for a consistent
                   look.
                 </p>
               </div>
             </div>
-            <div class="workflow-card">
-              <div class="workflow-card--header">
+            <div class="workflow-card flex-col">
+              <div class="workflow-card-header">
                 <img src="./images/icon-preview.svg" alt="Blacklist Icon" />
               </div>
-              <div class="workflow-card-body">
-                <h2>Sneak preview</h2>
-                <p>
+              <div class="workflow-card-body center">
+                <h2 class="text-preset-6">Sneak preview</h2>
+                <p class="text-preset-8">
                   Quick preview of all snippets on your Clipboard for easy
                   access.
                 </p>
@@ -130,7 +136,7 @@
             </div>
           </article>
         </section>
-        <section class="icon">
+        <section class="icon flex-col">
           <img src="./images/logo-google.png" alt="Google Logo" />
           <img src="./images/logo-ibm.png" alt="IBM Logo" />
           <img src="./images/logo-microsoft.png" alt="Microsoft Logo" />
@@ -140,36 +146,40 @@
             alt="Vector Graphics Logo"
           />
         </section>
-        <section class="bottom-hero">
-          <article class="hero">
-            <div class="hero-content">
-              <h2>Clipboard for iOS and Mac OS</h2>
-              <p>
+        <section class="bottom-hero flex-col center">
+          <article class="hero flex-col">
+            <div class="hero-content flex-col">
+              <h2 class="text-preset-5">Clipboard for iOS and Mac OS</h2>
+              <p class="text-preset-8">
                 Available for free on the App Store. Download for Mac or iOS,
                 sync with iCloud and you’re ready to start adding to your
                 clipboard.
               </p>
             </div>
-            <div class="hero-cta">
-              <a href="#!" class="btn btn-primary">Download for iOS</a>
-              <a href="#!" class="btn btn-secondary">Download for Mac</a>
+            <div class="hero-cta flex-col">
+              <a href="#!" class="btn btn-primary text-preset-7"
+                >Download for iOS</a
+              >
+              <a href="#!" class="btn btn-secondary text-preset-7"
+                >Download for Mac</a
+              >
             </div>
           </article>
         </section>
       </div>
     </main>
-    <footer class="container">
+    <footer class="container flex-col">
       <div class="footer-logo">
         <img src="./images/logo.svg" alt="Logo" />
       </div>
       <div class="footer-links">
-        <a href="#!">FAQs</a>
-        <a href="#!">Contact Us</a>
-        <a href="#!">Privacy Policy</a>
-        <a href="#!">Press Kit</a>
-        <a href="#!">Install Guide</a>
+        <a href="#!" class="text-preset-7">FAQs</a>
+        <a href="#!" class="text-preset-7">Contact Us</a>
+        <a href="#!" class="text-preset-7">Privacy Policy</a>
+        <a href="#!" class="text-preset-7">Press Kit</a>
+        <a href="#!" class="text-preset-7">Install Guide</a>
       </div>
-      <div class="footer-social">
+      <div class="footer-social flex-row">
         <a href="#!"
           ><img src="./images/icon-facebook.svg" alt="Facebook Icon"
         /></a>
